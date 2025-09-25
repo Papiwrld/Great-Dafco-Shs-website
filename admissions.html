@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Great Dafco Senior High School</title>
+    <meta name="description" content="Apply to Great Dafco Senior High School. Complete admission forms for SHS 1 and general applications. 95% WASSCE pass rate. Located in Ejisu Municipal, Ghana.">
+    <meta name="keywords" content="Great Dafco SHS admissions, SHS 1 application, BECE results, Ghana senior high school, Ejisu Municipal">
+    <meta name="author" content="Great Dafco Senior High School">
+    <meta property="og:title" content="Admissions - Great Dafco Senior High School">
+    <meta property="og:description" content="Join the Great Dafco family and start your journey to excellence">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greatdafcoshs.edu.gh/admissions.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="Image/School Logo.jpeg" as="image">
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Image/School Logo.jpeg" alt="Great Dafco Senior High School Logo" class="logo-img" loading="lazy">
+                <h2>Great Dafco SHS</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu" role="menubar">
+                <a href="index.html" class="nav-link" role="menuitem">Home</a>
+                <a href="programmes.html" class="nav-link" role="menuitem">Programmes</a>
+                <a href="admissions.html" class="nav-link active" role="menuitem" aria-current="page">Admissions</a>
+                <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <main id="main-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>Admissions</h1>
+            <p>Join the Great Dafco family and start your journey to excellence</p>
+        </div>
+    </section>
+
+    <!-- Admissions Information -->
+    <section class="admissions-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Admission Requirements</h3>
+                    <div id="admission-requirements">
+                        <div class="loading-placeholder">
+                            <p>Loading admission requirements...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3>Application Process</h3>
+                    <div id="application-process">
+                        <div class="loading-placeholder">
+                            <p>Loading application process...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3>Important Dates</h3>
+                    <div id="important-dates">
+                        <div class="loading-placeholder">
+                            <p>Loading important dates...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHS 1 Dedicated Admission Form -->
+    <section class="shs1-admission">
+        <div class="container">
+            <div class="shs1-header">
+                <h2>🎓 SHS 1 Admission Form</h2>
+                <p class="shs1-subtitle">Exclusive Application for New SHS 1 Students</p>
+                <div class="shs1-badge">
+                    <span class="badge-text">New Students Only</span>
+                </div>
+            </div>
+            
+            <div class="shs1-form-container">
+                <form class="shs1-form" id="shs1Form">
+                    <div class="form-section">
+                        <h3 class="section-title">📋 Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shs1FullName">Full Name *</label>
+                                <input type="text" id="shs1FullName" name="shs1FullName" required>
+                                <span class="error-message" id="shs1FullNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="shs1Email">Email Address *</label>
+                                <input type="email" id="shs1Email" name="shs1Email" required>
+                                <span class="error-message" id="shs1EmailError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shs1Phone">Phone Number *</label>
+                                <input type="tel" id="shs1Phone" name="shs1Phone" required>
+                                <span class="error-message" id="shs1PhoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="shs1DateOfBirth">Date of Birth *</label>
+                                <input type="date" id="shs1DateOfBirth" name="shs1DateOfBirth" required>
+                                <span class="error-message" id="shs1DateOfBirthError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shs1Gender">Gender *</label>
+                            <select id="shs1Gender" name="shs1Gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <span class="error-message" id="shs1GenderError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="section-title">🏫 Academic Background</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shs1JhsName">Junior High School Name *</label>
+                                <input type="text" id="shs1JhsName" name="shs1JhsName" required>
+                                <span class="error-message" id="shs1JhsNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="shs1JhsLocation">JHS Location *</label>
+                                <input type="text" id="shs1JhsLocation" name="shs1JhsLocation" required>
+                                <span class="error-message" id="shs1JhsLocationError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shs1BeceIndex">BECE Index Number *</label>
+                                <input type="text" id="shs1BeceIndex" name="shs1BeceIndex" placeholder="e.g., 1234567890" required>
+                                <span class="error-message" id="shs1BeceIndexError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="shs1BeceAggregate">BECE Aggregate *</label>
+                                <input type="number" id="shs1BeceAggregate" name="shs1BeceAggregate" min="6" max="30" placeholder="e.g., 12" required>
+                                <span class="error-message" id="shs1BeceAggregateError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shs1Programme">Preferred Programme *</label>
+                            <select id="shs1Programme" name="shs1Programme" required>
+                                <option value="">Select Programme</option>
+                                <option value="general-arts">General Arts</option>
+                                <option value="general-science">General Science</option>
+                                <option value="business">Business</option>
+                                <option value="visual-arts">Visual Arts</option>
+                                <option value="home-economics">Home Economics</option>
+                            </select>
+                            <span class="error-message" id="shs1ProgrammeError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="section-title">👨‍👩‍👧‍👦 Guardian Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shs1GuardianName">Guardian's Full Name *</label>
+                                <input type="text" id="shs1GuardianName" name="shs1GuardianName" required>
+                                <span class="error-message" id="shs1GuardianNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="shs1GuardianRelation">Relationship *</label>
+                                <select id="shs1GuardianRelation" name="shs1GuardianRelation" required>
+                                    <option value="">Select Relationship</option>
+                                    <option value="father">Father</option>
+                                    <option value="mother">Mother</option>
+                                    <option value="uncle">Uncle</option>
+                                    <option value="aunt">Aunt</option>
+                                    <option value="grandfather">Grandfather</option>
+                                    <option value="grandmother">Grandmother</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="shs1GuardianRelationError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shs1GuardianPhone">Guardian's Phone *</label>
+                                <input type="tel" id="shs1GuardianPhone" name="shs1GuardianPhone" required>
+                                <span class="error-message" id="shs1GuardianPhoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="shs1GuardianEmail">Guardian's Email</label>
+                                <input type="email" id="shs1GuardianEmail" name="shs1GuardianEmail">
+                                <span class="error-message" id="shs1GuardianEmailError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shs1GuardianOccupation">Guardian's Occupation</label>
+                            <input type="text" id="shs1GuardianOccupation" name="shs1GuardianOccupation">
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="section-title">🏠 Contact Information</h3>
+                        <div class="form-group">
+                            <label for="shs1Address">Residential Address *</label>
+                            <textarea id="shs1Address" name="shs1Address" rows="3" required></textarea>
+                            <span class="error-message" id="shs1AddressError"></span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shs1Region">Region *</label>
+                                <select id="shs1Region" name="shs1Region" required>
+                                    <option value="">Select Region</option>
+                                    <option value="ashanti">Ashanti</option>
+                                    <option value="greater-accra">Greater Accra</option>
+                                    <option value="western">Western</option>
+                                    <option value="eastern">Eastern</option>
+                                    <option value="central">Central</option>
+                                    <option value="volta">Volta</option>
+                                    <option value="northern">Northern</option>
+                                    <option value="upper-east">Upper East</option>
+                                    <option value="upper-west">Upper West</option>
+                                    <option value="brong-ahafo">Brong Ahafo</option>
+                                    <option value="western-north">Western North</option>
+                                    <option value="ahafo">Ahafo</option>
+                                    <option value="bono">Bono</option>
+                                    <option value="bono-east">Bono East</option>
+                                    <option value="oti">Oti</option>
+                                    <option value="savannah">Savannah</option>
+                                    <option value="north-east">North East</option>
+                                </select>
+                                <span class="error-message" id="shs1RegionError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="shs1District">District *</label>
+                                <input type="text" id="shs1District" name="shs1District" required>
+                                <span class="error-message" id="shs1DistrictError"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="section-title">📝 Additional Information</h3>
+                        <div class="form-group">
+                            <label for="shs1SpecialNeeds">Special Needs or Medical Conditions</label>
+                            <textarea id="shs1SpecialNeeds" name="shs1SpecialNeeds" rows="2" placeholder="Please specify any special needs or medical conditions (optional)"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shs1Extracurricular">Extracurricular Interests</label>
+                            <textarea id="shs1Extracurricular" name="shs1Extracurricular" rows="2" placeholder="Sports, clubs, or other activities you're interested in (optional)"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="shs1Terms" name="shs1Terms" required>
+                                    <span>I agree to the terms and conditions of admission and confirm that all information provided is accurate *</span>
+                                </label>
+                            </div>
+                            <span class="error-message" id="shs1TermsError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="shs1Newsletter" name="shs1Newsletter">
+                                    <span>I would like to receive updates about school activities and events</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit-section">
+                        <button type="submit" class="shs1-submit-btn">
+                            <span class="btn-text">Submit SHS 1 Application</span>
+                            <span class="btn-icon">🚀</span>
+                        </button>
+                        <p class="submit-note">* Required fields must be completed</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Application Form -->
+    <section class="general-admission">
+        <div class="container">
+            <div class="general-header">
+                <h2>📝 General Application Form</h2>
+                <p class="general-subtitle">Apply for admission to Great Dafco Senior High School - All Programmes</p>
+                <div class="general-badge">
+                    <span class="badge-text">All Students Welcome</span>
+                </div>
+            </div>
+            
+            <div class="general-form-container">
+                <form class="general-form" id="admissionForm" action="/api/admissions" method="POST">
+                    <div class="form-section">
+                        <h3 class="section-title">📋 Personal Information</h3>
+                        <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <span class="error-message" id="fullNameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                            </div>
+                </div>
+
+                        <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="dateOfBirth">Date of Birth *</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    <span class="error-message" id="dateOfBirthError"></span>
+                            </div>
+                        </div>
+                </div>
+
+                    <div class="form-section">
+                        <h3 class="section-title">🎓 Programme Selection</h3>
+                <div class="form-group">
+                    <label for="programme">Programme of Interest *</label>
+                    <select id="programme" name="programme" required>
+                        <option value="">Select a programme</option>
+                        <optgroup label="Regular Programmes">
+                            <option value="general-arts">General Arts</option>
+                            <option value="general-science">General Science</option>
+                            <option value="business">Business</option>
+                            <option value="visual-arts">Visual Arts</option>
+                            <option value="home-economics">Home Economics</option>
+                        </optgroup>
+                        <optgroup label="Non-Regular Programmes">
+                            <option value="remedial">Remedial Series</option>
+                            <option value="adult-education">Adult Education</option>
+                            <option value="music-culture">Music and Culture</option>
+                            <option value="sports-games">Sports and Games</option>
+                            <option value="catering-fashion">Catering and Fashion Design</option>
+                            <option value="farming">Farming</option>
+                            <option value="robotics-software">Robotics and Software Development</option>
+                        </optgroup>
+                    </select>
+                    <span class="error-message" id="programmeError"></span>
+                </div>
+                </div>
+
+                    <div class="form-section">
+                        <h3 class="section-title">👨‍👩‍👧‍👦 Guardian Information</h3>
+                        <div class="form-row">
+                <div class="form-group">
+                    <label for="guardianName">Guardian's Name *</label>
+                    <input type="text" id="guardianName" name="guardianName" required>
+                    <span class="error-message" id="guardianNameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="guardianContact">Guardian's Contact *</label>
+                    <input type="tel" id="guardianContact" name="guardianContact" required>
+                    <span class="error-message" id="guardianContactError"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="section-title">🏠 Contact Information</h3>
+                        <div class="form-group">
+                            <label for="address">Residential Address *</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                            <span class="error-message" id="addressError"></span>
+                        </div>
+                </div>
+
+                    <div class="form-section">
+                        <h3 class="section-title">📝 Additional Information</h3>
+                <div class="form-group">
+                    <label for="additionalMessage">Additional Message</label>
+                    <textarea id="additionalMessage" name="additionalMessage" rows="4" placeholder="Any additional information you'd like to share..."></textarea>
+                </div>
+
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required>
+                                    <span>I agree to the terms and conditions and privacy policy *</span>
+                    </label>
+                            </div>
+                    <span class="error-message" id="termsError"></span>
+                        </div>
+                </div>
+
+                    <div class="form-submit-section">
+                        <button type="submit" class="general-submit-btn">
+                            <span class="btn-text">Submit Application</span>
+                            <span class="btn-icon">📤</span>
+                        </button>
+                        <p class="submit-note">* Required fields must be completed</p>
+                    </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Information -->
+    <section class="admissions-contact">
+        <div class="container">
+            <h2>Need Help with Your Application?</h2>
+            <div class="contact-grid" id="admissions-contact-grid">
+                <div class="loading-placeholder">
+                    <p>Loading contact information...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Great Dafco Senior High School</h3>
+                    <p class="footer-motto">"Making People Great"</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Director:</strong> John Owusu Ogbordjor</p>
+                    <p>Email: Ogbojohn@gmail.com</p>
+                    <p>Phone: 0243537124</p>
+                    <p><strong>Admission Office:</strong></p>
+                    <p>Email: gdafwshs@gmail.com</p>
+                    <p>Phone: 0548357042</p>
+                    <p><strong>Academic Office:</strong></p>
+                    <p>Email: greatdafwaca25@gmail.com</p>
+                    <p>Phone: 0249183565 / 0501326757</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Great Dafco Senior High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

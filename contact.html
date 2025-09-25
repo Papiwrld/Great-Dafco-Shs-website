@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Great Dafco Senior High School</title>
+    <meta name="description" content="Contact Great Dafco Senior High School. Get in touch with our Director, Admission Office, and Academic Office. Visit our campus in Kumasi, Ghana.">
+    <meta name="keywords" content="Great Dafco SHS contact, Kumasi, Ghana, school location, admission office, academic office">
+    <meta name="author" content="Great Dafco Senior High School">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="Image/School Logo.jpeg" as="image">
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Image/School Logo.jpeg" alt="Great Dafco Senior High School Logo" class="logo-img" loading="lazy">
+                <h2>Great Dafco SHS</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu" role="menubar">
+                <a href="index.html" class="nav-link" role="menuitem">Home</a>
+                <a href="programmes.html" class="nav-link" role="menuitem">Programmes</a>
+                <a href="admissions.html" class="nav-link" role="menuitem">Admissions</a>
+                <a href="contact.html" class="nav-link active" role="menuitem" aria-current="page">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any inquiries or support</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid" id="contact-info-grid">
+                <!-- Fallback hardcoded contact information -->
+                <div class="contact-card director" data-fallback="true">
+                    <div class="contact-icon">👨‍💼</div>
+                    <h3>Director</h3>
+                    <div class="contact-details">
+                        <p><strong>Name:</strong> John Owusu Ogbordjor</p>
+                        <p><strong>Email:</strong> <a href="mailto:Ogbojohn@gmail.com">Ogbojohn@gmail.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:0243537124">0243537124</a></p>
+                    </div>
+                    <p class="contact-description">For general school administration and leadership matters</p>
+                </div>
+                
+                <div class="contact-card academic" data-fallback="true">
+                    <div class="contact-icon">🎓</div>
+                    <h3>Academic Office</h3>
+                    <div class="contact-details">
+                        <p><strong>Office Email:</strong> <a href="mailto:greatdafwaca25@gmail.com">greatdafwaca25@gmail.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:0249183565">0249183565</a> / <a href="tel:0501326757">0501326757</a></p>
+                    </div>
+                    <p class="contact-description">For academic programs, curriculum, and student academic support</p>
+                </div>
+                
+                <div class="contact-card admission" data-fallback="true">
+                    <div class="contact-icon">📝</div>
+                    <h3>Admission Office</h3>
+                    <div class="contact-details">
+                        <p><strong>Office Email:</strong> <a href="mailto:gdafwshs@gmail.com">gdafwshs@gmail.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:0548357042">0548357042</a></p>
+                    </div>
+                    <p class="contact-description">For admission inquiries, applications, and enrollment information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Send us a Message</h2>
+            <!-- Backend Integration Required: This form will submit to /api/contact endpoint -->
+            <form id="contactForm" class="contact-form" action="/api/contact" method="POST" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Full Name *</label>
+                        <input type="text" id="contactName" name="contactName" required aria-describedby="contactNameError" autocomplete="name">
+                        <span class="error-message" id="contactNameError" role="alert" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required aria-describedby="contactEmailError" autocomplete="email">
+                        <span class="error-message" id="contactEmailError" role="alert" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required aria-describedby="subjectError">
+                            <option value="">Select a subject</option>
+                            <option value="admission">Admission Inquiry</option>
+                            <option value="academic">Academic Program</option>
+                            <option value="general">General Information</option>
+                            <option value="support">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="subjectError" role="alert" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..." aria-describedby="messageError"></textarea>
+                    <span class="error-message" id="messageError" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Backend Integration Required: CSRF token will be added here -->
+                <!-- <input type="hidden" name="csrf_token" value="{{ csrf_token }}"> -->
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- School Location -->
+    <section class="location">
+        <div class="container">
+            <h2>Visit Our Campus</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Great Dafco Senior High School</h3>
+                    <p>We welcome visitors to our campus. Please contact us in advance to schedule a visit and tour of our facilities.</p>
+                    <div class="visit-info" id="visiting-hours">
+                        <div class="loading-placeholder">
+                            <p>Loading visiting hours...</p>
+                        </div>
+                    </div>
+                    <div class="visit-info">
+                        <h4>Tour Information</h4>
+                        <p>Campus tours are available by appointment. Please contact the admission office to schedule your visit.</p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d143904.54931168642!2d-1.6665460342223057!3d6.68923036645117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xfdb9440375a5575%3A0x88c55d51d4866ae7!2sBomso%20Rd%2C%20Kumasi!3m2!1d6.6837915!2d-1.5772201!5e0!3m2!1sen!2sgh!4v1758314185178!5m2!1sen!2sgh"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Great Dafco Senior High School Location">
+                      </iframe>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact -->
+    <section class="quick-contact">
+        <div class="container">
+            <h2>Quick Contact</h2>
+            <div class="quick-contact-grid" id="quick-contact-grid">
+                <div class="loading-placeholder">
+                    <p>Loading quick contact options...</p>
+                </div>
+                <a href="admissions.html" class="quick-contact-item">
+                    <div class="quick-icon">📝</div>
+                    <h4>Apply for Admission</h4>
+                    <p>Start your application</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Great Dafco Senior High School</h3>
+                    <p class="footer-motto">"Making People Great"</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div id="footer-contact-info">
+                        <!-- Fallback hardcoded contact info -->
+                        <p><strong>Director:</strong> John Owusu Ogbordjor</p>
+                        <p>Email: Ogbojohn@gmail.com</p>
+                        <p>Phone: 0243537124</p>
+                        <p><strong>Admission Office:</strong></p>
+                        <p>Email: gdafwshs@gmail.com</p>
+                        <p>Phone: 0548357042</p>
+                        <p><strong>Academic Office:</strong></p>
+                        <p>Email: greatdafwaca25@gmail.com</p>
+                        <p>Phone: 0249183565 / 0501326757</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Great Dafco Senior High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
